@@ -91,12 +91,17 @@ tbody>tr{
 
   
 }
-tbody>tr:last-child{
+tbody>tr:nth-child(odd){
   background-color: white;
   animation: fadebackground 3s ;
-  
- 
+
 }
+tbody>tr:nth-child(even){
+  background-color: rgba(235,242,211,255); 
+  animation: fadebackground 3s ;
+
+}
+
 @keyframes fadebackground {
   0% {opacity: 0;}
   100% {opacity: 1;}
