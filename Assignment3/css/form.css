@@ -1,0 +1,156 @@
+.bg-color{
+    background-color: cyan;
+}
+#footer{
+    position: absolute;
+    bottom: 0;
+    height:4%;
+    width:100%;
+    padding-bottom:5px;
+    padding-top:5px;
+    text-align: center;
+    position: fixed;
+    background-color:rgba(71,215,171,255);
+    margin-bottom: 0%;
+}
+#vertical{
+  border-left: 3px solid rgb(134, 196, 73);
+  height: 300px;
+  position:relative;
+
+  left: 50%;
+  margin-left: -3px;
+  top:0;
+  
+}
+label{
+  text-align: left;
+  margin-left: 0%;
+}
+.checkmark{
+  background-color: #eee;
+}
+input:checked~.checkmark{
+  background-color: #2196F3;
+}
+
+.vertical{
+  
+  height: 300px;
+    border-left: 2px solid rgba(71,215,171,255);
+    position: absolute;
+    left: 50%;
+}
+
+#enrol{
+  border-radius:7px;
+  margin:0px 20px 0 20px;
+  Background-color: rgba(2,133,251,255);
+  width:160px
+
+}
+.form-control{
+  width: 85%;
+  height: 34px;
+  border: 1px solid black;
+
+}
+#content{
+  font-size: 12px;
+  padding: 3px 2px 3px 5px;
+  column-width: 180px;
+  word-spacing: normal;
+  line-height: 1em;
+  
+}
+#tablehead{
+  background-color: #a8c944;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: rgba(167,201,65,255);
+}
+.error{
+  color:red;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0%;
+  word-spacing: -1%;
+  padding-top: 1%;
+  padding-left: 1%;
+  padding-right: 0%;
+  padding-bottom: 0%;
+}
+#green_bg{
+ background-color:rgba(235,242,211,255)
+}
+#white_bg{
+  background-color: rgba(255,255,255,255);
+}
+tbody>tr{
+  height: 130px;
+
+  
+}
+tbody>tr:last-child{
+  background-color: white;
+  animation: fadebackground 3s ;
+  
+ 
+}
+@keyframes fadebackground {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@media only screen and (max-width: 998px) {
+  #demo {
+    display: none !important;
+  }
+
+}
+#desc{
+  width:350px;
+  height:130px;
+
+}
+#imagecell{
+  width:120px;
+  height:120px;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: rgba(167,201,65,255);
+}
+#desc{
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: rgba(167,201,65,255);
+
+}
+
+.resize{
+  width: 120px;
+  height: 120px;
+ 
+
+}
+#enroltable{
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: rgba(167,201,65,255);
+  margin-top: 30px;
+  margin-left: 20px;
+
+}
+thead{
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: rgba(167,201,65,255);
+}
+#genderInput{
+  margin-top: 0px;
+}
+#skillInput{
+  margin-top: 0px;
+}
+.row{
+  margin-bottom: 15px;
+}
