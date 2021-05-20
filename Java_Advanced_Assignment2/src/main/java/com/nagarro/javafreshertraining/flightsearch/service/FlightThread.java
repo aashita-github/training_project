@@ -1,4 +1,4 @@
-package com.service.reader;
+package com.nagarro.javafreshertraining.flightsearch.service;
 
 import java.io.IOException;
 import java.util.List;
@@ -7,12 +7,13 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author aashita Thread class to watch for the changes in the folder
+ * @author aashita 
+ * Thread class to watch for the changes in the folder and populate map after 1 min
  */
 public class FlightThread {
 	static List<String> files;
 
-	public static void useThread() {
+	public static void useThread(List<String> Files) {
 		FileSearch fs = new FileSearch();
 		ScheduledExecutorService executor = Executors.newScheduledThreadPool(1);
 		Runnable task = () -> {
@@ -20,9 +21,10 @@ public class FlightThread {
 				files = (fs.fileUtility());
 
 				for (String strFile : files) {
-					if (!FlightService.files.contains(strFile)) {
+					if (!Files.contains(strFile)) {
 						
-						FlightService.populateMapFromFiles(strFile);
+						FlightService.populateDbFromFiles(strFile);
+						Files.add(strFile);
 
 					}
 				}

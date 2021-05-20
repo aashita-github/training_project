@@ -1,4 +1,4 @@
-package com.service.reader;
+package com.nagarro.javafreshertraining.flightsearch.service;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -16,12 +16,12 @@ public class FileSearch {
 
 	public List<String> fileUtility() throws IOException, InterruptedException {
 
-		Path path = Paths.get("C:\\Users\\aashita\\eclipse-workspace\\Assignment\\FlightData");
+		Path path = Paths.get("C:\\Users\\aashita\\eclipse-workspace\\Java_Advanced_Assignment2\\FlightData");
 
 		try (Stream<Path> subPaths = Files.walk(path)) {
 			List<String> list = subPaths.filter(Files::isRegularFile).map(Objects::toString)
 					.collect(Collectors.toList());
-			
+
 			return list;
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -29,4 +29,5 @@ public class FileSearch {
 		return null;
 
 	}
+
 }
