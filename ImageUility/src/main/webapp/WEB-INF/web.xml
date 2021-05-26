@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/zns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee                       http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+  <display-name>ImageUility</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  -<servlet>
+
+<servlet-name>LoginServlet</servlet-name>
+
+<display-name>LoginServlet</display-name>
+
+<description/>
+
+<servlet-class>com.nagarro.servlets.LoginServlet</servlet-class>
+
+</servlet>
+<servlet>
+    <servlet-name>ImageUpload</servlet-name>
+    <display-name>ImageUpload</display-name>
+    <description></description>
+    <servlet-class>com.nagarro.servlets.ImageUpload</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ImageUpload</servlet-name>
+    <url-pattern>/ImageUpload</url-pattern>
+  </servlet-mapping>
+<servlet>
+    <servlet-name>ImageDelete</servlet-name>
+    <display-name>ImageDelete</display-name>
+    <description></description>
+     <servlet-class>com.nagarro.servlets.ImageDelete</servlet-class>
+      </servlet>
+<servlet>
+    <servlet-name>ImageUpdate</servlet-name>
+    <display-name>ImageUpdate</display-name>
+    <description></description>
+    <servlet-class>com.nagarro.servlets.ImageUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ImageUpdate</servlet-name>
+    <url-pattern>/ImageUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ResetPasswordServlet</servlet-name>
+    <display-name>ResetPasswordServlet</display-name>
+    <description></description>
+    <servlet-class>com.nagarro.servlets.ResetPasswordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ResetPasswordServlet</servlet-name>
+    <url-pattern>/ResetPasswordServlet</url-pattern>
+  </servlet-mapping>
+<multipart-config>
+   <max-file-size>52428800</max-file-size>
+   <max-request-size>52428800</max-request-size>
+   <file-size-threshold>0</file-size-threshold>
+</multipart-config>
+
+</web-app>
