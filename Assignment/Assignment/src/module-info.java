@@ -1,3 +1,0 @@
-module Assignment {
-	requires opencsv;
-}
